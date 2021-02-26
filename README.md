@@ -7,7 +7,7 @@ L'appartement est comme suit :
 ## Le problème
 Le problème est noté comme suit :  
 ![Le système](img/systeme.png)  
-On peut voir qu'en écrivant ce système sous forme variationelle on obtient :
+On peut voir qu'en écrivant ce système sous forme variationelle on obtient :  
 ![Système sous forme variationnelle](img/systeme_faible.png)  
 Avec :  
 ![Détails](img/details.png)  
@@ -22,15 +22,15 @@ On peut remarquer plusieurs choses :
 Le git se sépare en plusieurs dossiers :  
 * __mesh__ : contenant les fichiers msh avec différentes finesse de maillage
 * __script__ : contenant les fichiers `.py`
-`* __solveur.py__ : notre code principal pour l'exécution`
-* __triangle.py__ : la classe triangle avec les fonctions correspondantes  
-* __segment.py__ : la classe segment avec les fonctions correspondantes  
-* __point.py__ : la classe point avec les fonctions correspondantes  
-* __triplet.py__ : la classe triplet avec les fonctions correspondantes  
-* __mesh.py__ : la classe mesh qui utilise les classes triangle, segment et point  
-* __assembly.py__ : la classe qui s'occupe des assemblages de matrices de masse, rigidité, second membre
+  * __solveur.py__ : notre code principal pour l'exécution
+  * __triangle.py__ : la classe triangle avec les fonctions correspondantes  
+  * __segment.py__ : la classe segment avec les fonctions correspondantes  
+  * __point.py__ : la classe point avec les fonctions correspondantes  
+  * __triplet.py__ : la classe triplet avec les fonctions correspondantes  
+  * __mesh.py__ : la classe mesh qui utilise les classes triangle, segment et point  
+  * __assembly.py__ : la classe qui s'occupe des assemblages de matrices de masse, rigidité, second membre
 * __res__ : contenant les images de nos précédentes exécutions
-##Exécution du code
+## Exécution du code
 Pour exécuter notre solveur, il faut taper la commande suivante : python3 solveur.py [finesseMaillage]
 avec finesseMaillage qui peut prendre les valeurs {0.1, 1, 100}
 Pour 0.1, il faut obtenir :
