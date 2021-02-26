@@ -19,7 +19,6 @@ def mass_elem(element, triplets, alpha = 1.):
         Tp = float(element.area_)
         Tp /= 12
         Tp *= alpha
-        print(Tp)
         #   construction matrice
         for i in range(3):
             for j in range(3):

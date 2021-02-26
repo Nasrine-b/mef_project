@@ -11,12 +11,12 @@ else:
 	elif sys.argv[1] == "1":
 		filename = "../mesh/problem_1.msh"
 	elif sys.argv[1] == "0.1":
-		filename = "../mesh/problem_0.1.msh"		
+		filename = "../mesh/problem_0.1.msh"
 	else:
 		print("[ERREUR] "+sys.argv[1]+" n'est pas un argument valide")
 		print("Les argument valide sont 0.1, 1 et 100.")
 		sys.exit()
-		
+
 #   Fonction pour la condition de Dirichlet (fenêtre)
 def g_fenetre(x,y):
  return -10
@@ -59,5 +59,6 @@ for tri in msh.listTrig:
 gmsh.finalize()
 #   Plot final
 plt.tricontourf(x,y,connectivity,U,12,cmap="Spectral_r")
-plt.colorbar()
+plt.title("Représentation du système avec h = "+sys.argv[1])
+plt.colorbar().set_label("Température")
 plt.show()
