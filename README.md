@@ -10,7 +10,7 @@ Le problème est noté comme suit :
 On peut voir qu'en écrivant ce système sous forme variationelle on obtient :  
 ![Système sous forme variationnelle](img/systeme_faible.png)  
 Avec :  
-![Détails](img/details.png = 67x272}.  
+![Détails](img/details.png = 67x272).  
 ## Implémentation  
 On peut remarquer plusieurs choses :  
 * Pas besoin de matrice de Masse : A = D (matrice de rigidité)  
@@ -31,8 +31,11 @@ Le git se sépare en plusieurs dossiers :
   * __assembly.py__ : la classe qui s'occupe des assemblages de matrices de masse, rigidité, second membre
 * __res__ : contenant les images de nos précédentes exécutions
 ## Exécution du code
-Pour exécuter notre solveur, il faut aller dans le dossier script (`cd script`) puis taper la commande suivante : `python3 solveur.py finesseMaillage`  
+Pour exécuter notre solveur, il faut :  
+* Aller dans le dossier script (`cd script`)  
+* Taper la commande : `python3 solveur.py finesseMaillage`  
 avec `finesseMaillage` qui peut prendre les valeurs {0.1, 1, 100}  
+__Remarque :__ Le code renvoie une image
 ## Nos résultats
 Pour `finesseMaillage = 0.1`, nous obtenons :
 ![](result/res_0.1.png)
