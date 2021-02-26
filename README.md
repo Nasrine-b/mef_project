@@ -10,7 +10,7 @@ Le problème est noté comme suit :
 On peut voir qu'en écrivant ce système sous forme variationelle on obtient :  
 ![Système sous forme variationnelle](img/systeme_faible.png)  
 Avec :  
-![Détails](img/details.png){:height="67px" width="272px"}.  
+![Détails](img/details.png = 67x272}.  
 ## Implémentation  
 On peut remarquer plusieurs choses :  
 * Pas besoin de matrice de Masse : A = D (matrice de rigidité)  
