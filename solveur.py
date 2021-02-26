@@ -3,7 +3,7 @@ from assembly import *
 filename = ""
 
 if len(sys.argv) == 1:
-	print("[ERREUR] Il manque un argument. Les valeurs possible sont 0.1, 1 et 100")
+	print("[ERREUR] Il manque un argument. Les valeurs possibles sont 0.1, 1 et 100")
 	sys.exit()
 else:
 	if sys.argv[1] == "100":
@@ -13,9 +13,8 @@ else:
 	elif sys.argv[1] == "0.1":
 		filename = "problem_0.1.msh"		
 	else:
-		print("[ERREUR] "+sys.argv[1]+" n'est un argument valide")
+		print("[ERREUR] "+sys.argv[1]+" n'est pas un argument valide")
 		print("Les argument valide sont 0.1, 1 et 100.")
-		print("Lire le README pour plus de renseignement")
 		sys.exit()
 		
 #   Fonction pour la condition de Dirichlet (fenêtre)
