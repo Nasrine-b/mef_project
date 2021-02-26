@@ -14,7 +14,7 @@ else:
 		filename = "../mesh/problem_0.1.msh"
 	else:
 		print("[ERREUR] "+sys.argv[1]+" n'est pas un argument valide")
-		print("Les argument valide sont 0.1, 1 et 100.")
+		print("Les arguments valides sont 0.1, 1 et 100.")
 		sys.exit()
 
 #   Fonction pour la condition de Dirichlet (fenêtre)
