@@ -4,7 +4,7 @@ Le problème consiste à modéliser la diffusion de la chaleur dans un apparteme
 L'appartement est comme suit :  
 ![Image de l'appartement](https://bthierry.pages.math.cnrs.fr/course-fem/_images/2020-2021-flat.svg)  
 Le problème est noté comme suit :  
-```math
+`math
 \left \{
 \begin{array}{rcl}
 -\nabla u &= 0 &(\Omega) \\
@@ -12,7 +12,7 @@ u &= T_c &(\Gamma_{Rad})\\
 u &= T_f &(\Gamma_{Fen})\\
 \partial_n u &= 0 &(\Gamma_{Mur})\\
 \end{array}
-\right.```
+\right.`
 <img src="https://render.githubusercontent.com/render/math?math=\left \{
 \begin{array}{rcl}
 -\nabla u &= 0 &(\Omega) \\
