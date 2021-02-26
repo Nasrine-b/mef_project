@@ -37,9 +37,9 @@ Pour exécuter notre solveur, il faut :
 avec `finesseMaillage` qui peut prendre les valeurs {0.1, 1, 100}  
 __Remarque :__ Le code renvoie une image
 ## Nos résultats
-Pour `finesseMaillage = 0.1`, nous obtenons :
-![](result/res_0.1.png)
-Pour `finesseMaillage = 1`, nous obtenons :
-![](result/res_1.png)
-Pour `finesseMaillage = 100`, nous obtenons :
+Pour `finesseMaillage = 0.1`, nous obtenons :  
+![](result/res_0.1.png)  
+Pour `finesseMaillage = 1`, nous obtenons :  
+![](result/res_1.png)  
+Pour `finesseMaillage = 100`, nous obtenons :  
 ![](result/res_100.png)      
