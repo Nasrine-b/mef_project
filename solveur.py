@@ -1,5 +1,23 @@
 from assembly import *
 
+filename = ""
+
+if len(sys.argv) == 1:
+	print("[ERREUR] Il manque un argument. Les valeurs possible sont 0.1, 1 et 100")
+	sys.exit()
+else:
+	if sys.argv[1] == "100":
+		filename = "problem_100.msh"
+	elif sys.argv[1] == "1":
+		filename = "problem_1.msh"
+	elif sys.argv[1] == "0.1":
+		filename = "problem_0.1.msh"		
+	else:
+		print("[ERREUR] "+sys.argv[1]+" n'est un argument valide")
+		print("Les argument valide sont 0.1, 1 et 100.")
+		print("Lire le README pour plus de renseignement")
+		sys.exit()
+		
 #   Fonction pour la condition de Dirichlet (fenêtre)
 def g_fenetre(x,y):
  return -10
@@ -15,7 +33,7 @@ tag_fen = 3
 #   Initialisation du mesh
 gmsh.initialize()
 msh = Mesh()
-msh.GmshToMesh(filename="problem.msh")
+msh.GmshToMesh(filename=filename)
 t = Triplet()
 
 #   Calcul de la matrice de rigidité (la matrice de masse est nulle dans notre problème)
