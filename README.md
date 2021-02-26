@@ -34,8 +34,8 @@ Le git se sépare en plusieurs dossiers :
 Pour exécuter notre solveur, il faut taper la commande suivante : python3 solveur.py [finesseMaillage]
 avec finesseMaillage qui peut prendre les valeurs {0.1, 1, 100}
 Pour 0.1, il faut obtenir :
-![](img/res_0.1.png)
+![](result/res_0.1.png)
 Pour 1, il faut obtenir :
-![](img/res_1.png)
+![](result/res_1.png)
 Pour 100, il faut obtenir :
-![](img/res_100.png)      
+![](result/res_100.png)      
